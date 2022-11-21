@@ -24,5 +24,35 @@ unless (numero_uno > numero_dos)
     puts "#{numero_uno} es menor que #{numero_dos}"
 end
 
+puts "case"
+
+case numero_uno
+when 10,9,8,7,6 
+    puts "muy bin"
+when 5,4 
+    puts "maso"
+else
+    puts "mal"
+end
+
+puts "array"
+arreglo = [1,"pp",5]
+arreglo2 = Array.new(5)
+puts arreglo
+puts arreglo2
+
+puts arreglo[1]
+
+arreglo2 = %w[10 20 40 5 9]
+
+arreglo2.each do |arreglo2|
+    puts "valor: #{arreglo2}"
+end
+suma = 0
+arreglo2.each_with_index do |arreglo2, posicion|
+    puts "Posicion #{posicion} valor  #{arreglo2}"
+    suma += arreglo2.to_i
+end
+puts "promedio #{suma.to_f / arreglo2.length} "
 
 puts "fin"
