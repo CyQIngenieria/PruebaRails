@@ -19,4 +19,10 @@ puts "#{numero_uno} es mayor que #{numero_dos}" if numero_uno > numero_dos
 puts "#{numero_dos} es mayor que #{numero_uno}" if numero_dos > numero_uno
 puts "#{numero_uno} es igual que #{numero_dos}" if numero_uno == numero_dos
 
+puts "otra condicion unless es cuando el resultado es una sola linea y como resultado falso"
+unless (numero_uno > numero_dos) 
+    puts "#{numero_uno} es menor que #{numero_dos}"
+end
+
+
 puts "fin"
